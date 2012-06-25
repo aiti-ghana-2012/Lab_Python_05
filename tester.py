@@ -132,38 +132,47 @@ def test_isPalindrome():
 
 
 	bla = isPalindrome('able was I ere I saw elba')
-
-	
-
-	if bla:
+	if bla is True:
 		pass
 	else:
 		return "ERROR: Ran isPalindrome('able was I ere I saw elba'). Expected True, got:"+str( bla)
+	
 	bla = isPalindrome('Able was i ere I saw elba')
-	if not bla:
+	if bla is False:
 		pass
 	else:
 		return "ERROR: Ran isPalindrome('Able was i ere I saw elba'). Expected False, got:"+str( bla)
+		
 	bla = isPalindrome('amanaplanacanalpanama')
-	if not bla:
+	if bla is True:
 		pass
 	else:
-		return "ERROR: Ran isPalindrome('amanaplanacanalpanama'). Expected False, got:" + str( bla )
+		return "ERROR: Ran isPalindrome('amanaplanacanalpanama'). Expected True, got:" + str( bla )
+		
 	bla = isPalindrome('a man a plan a canal panama')
-	if not bla:
+	if bla is True:
 		pass
 	else:
-		return "ERROR: Ran isPalindrome('a man a plan a canal panama'). Expected False, got:" + str( bla )
+		return "ERROR: Ran isPalindrome('a man a plan a canal panama'). Expected True, got:" + str( bla )
+		
 	bla = isPalindrome('yobananaboy')
-	if bla:
+	if bla is True:
 		pass
 	else:
-		return "ERROR: Ran isPalindrome('yobananaboy'). Expected True, got:"+str( bla)
-	la = isPalindrome('gohangasalamiimalasagnahog')
-	if bla:
+		return "ERROR: Ran isPalindrome('yobananaboy'). Expected True, got:"+str( bla)\
+		
+	bla = isPalindrome('gohangasalamiimalasagnahog')
+	if bla is True:
 		pass
 	else:
-		return "ERROR: Ran isPalindrome('yobananaboy'). Expected True, got:"+str( bla)
+		return "ERROR: Ran isPalindrome('gohangasalamiimalasagnahog'). Expected True, got:"+str( bla)
+		
+	bla = isPalindrome('chicken')
+	if bla is False:
+		pass
+	else:
+		return "ERROR: Ran isPalindrom('chicken'). Expected True, got:" + str(bla)
+		
 	return "OK"
 
 @test_harness
