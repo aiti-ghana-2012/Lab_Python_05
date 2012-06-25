@@ -20,7 +20,7 @@ class bcolors:
 try:
 	from Lab05 import *
 except ImportError:
-	print 'ERROR: No Lab05.py file found'
+	print bcolors.FAIL + 'ERROR: No Lab05.py file found' + bcolors.ENDC
 	sys.exit(1)
 
 
