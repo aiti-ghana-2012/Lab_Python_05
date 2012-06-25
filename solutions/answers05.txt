@@ -1,0 +1,30 @@
+"""
+Lab_Python_05
+Solutions for Problem 1
+"""
+
+## a.
+output: '51'
+5 becomes '5' and then is concatenated with '1'
+
+## b.
+output: 10
+one is 5, and two is 5 also by default
+
+## c.
+output: 25
+it doesn't matter what values are passed as arugments because
+they are immediately overwritten when the function is run.
+a and b will both always be 5.
+
+## d. 
+output: ['one', 'two', 'three', 'four']
+if a function modifies the objects passed to it,
+the changes are permenant
+
+## e.
+output: 72
+when `do` runs, f is inp, so f(a) becomes inp(6) = 12
+6 * 12 is 72.
+ 
+
